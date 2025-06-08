@@ -9,7 +9,7 @@ This project implements a full pipeline to translate sign language into text usi
 </p>
 
 Watch a real-time demo of sign language translation using our trained model and the Citizen ASL dataset.
-> Disclaimer: I am an amateur signer, and the signing in this demo may not fully follow formal ASL grammar or conventions.
+> Disclaimer: Not a proffesional signer, the signing in this demo may not fully follow formal ASL grammar or conventions.
 
 ## Features
 - Pose-based sign language recognition using MediaPipe Holistic
