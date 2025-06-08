@@ -11,6 +11,40 @@ Watch a real-time demo of sign language translation using our trained model and 
 - Normalization and preprocessing of landmark sequences
 - GRU-based model trained on 200 unique glosses (271 total classes including duplicates)
 - Real-time webcam-based translation with LLM for sentence refinement (OpenAI GPT)
+
+
+## Setup
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+Alternatively, install dependencies manually ensuring the following versions:
+- Python 3.10.17
+- TensorFlow 2.19.0
+- MediaPipe 0.10.9
+- OpenAI 1.82.0
+
+### Obtain API Key for LLM
+This project uses [OpenAI GPT API](https://platform.openai.com) for sentence refinement during live translation. You need a valid API key with billing enabled. Crete a file named `.env` in the project root and add the following line:
+```bash
+API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+Make sure you have `python-dotenv` installed.
+
+## 🚀 Usage
+- Full pipeline
+   To train your own model and reproduce the full workflow : Open and run `main_livefeed.ipynb`. This notebook contains all steps end-to-end:
+   1.  Download the [Citizen ASL Dataset](https://www.microsoft.com/en-us/research/project/asl-citizen/)
+   2.  Place the dataset folder in the same directory as `main_livefeed.ipynb` (the project root)
+   3.  Open and run the full pipeline step 1-3 on `main_livefeed.ipynb`
+   4.  Finally, use the trained model for live translation
+- Direct use with Pre-trained model
+  If you prefer to skip training
+  1. Ensure the pre-trained GRU model (`.keras`) is available in the `/models` folder (already provided)
+  2. Open `main_livefeed.ipynb`
+  3. Jump directly to **Step 4** to start live translation using the pre-trained model
+
+
 ## References
 - **ASL Citizen Dataset**  
   Desai, A., Berger, L., Minakov, F. O., Milan, V., Singh, C., Pumphrey, K., Ladner, R. E., Daumé III, H., Lu, A. X., Caselli, N., & Bragg, D.  
