@@ -19,8 +19,17 @@ Watch a real-time demo of sign language translation using our trained model and 
 
 
 ## Setup
-### Install Dependencies
-Make sure to have Python 3.10.17 installed. Once your done in the correct environment:
+
+### Requirements
+Make sure to have Python 3.10.17 installed. You can use pyenv or another version manager to install and activate it.
+
+### Clone the repostiroy
+```bash
+git clone https://github.com/tobp03/live-asl-translation.git
+cd live-asl-translation
+```
+### Instal Dependencies
+Once your done in the correct environment:
 ```bash
 pip install -r requirements.txt
 ```
