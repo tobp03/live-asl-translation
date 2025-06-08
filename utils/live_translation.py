@@ -282,7 +282,6 @@ def start_live_feed(
         if len(landmark_stored) > 5:
             score = movement_score(np.array(landmark_stored[-5:]))
             smoothed_score = update_ema(score)
-            print(score, smoothed_score, counter)
             if smoothed_score > threshold:
                 counter+=1
                 status_text="Capturing"
