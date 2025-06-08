@@ -66,6 +66,6 @@ API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 ## Related Publication
 This project is related to the research paper:  
-Purbojo, T., & Wijaya, A. (2023). *Pose-Based Sign Language Recognition Using Mediapipe Holistic and LSTM*.  
+Purbojo, T., & Wijaya, A. (2025). *Pose-Based Sign Language Recognition Using Mediapipe Holistic and LSTM*.  
 [ASSET Journal, Volume X, Issue Y, Pages A-B](https://journal2.upgris.ac.id/index.php/asset/article/view/1658)
 
