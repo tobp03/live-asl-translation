@@ -1,4 +1,4 @@
-# ✊ Live Sign Language Translation with Citizen ASL Dataset 🤚
+# ✊ Real-time Sign Language Translation with Citizen ASL Dataset 🤚
 
 This project implements a full pipeline to translate sign language into text using pose estimation, deep learning, and a large language model (LLM) for sentence refinment. The live translation system is built using the [Citizen ASL Dataset](https://www.microsoft.com/en-us/research/project/asl-citizen/) and runs in real time with a webcam.
 
