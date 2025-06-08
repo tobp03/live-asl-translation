@@ -2,7 +2,11 @@
 
 This project implements a full pipeline to translate sign language into text using pose estimation, deep learning, and a large language model (LLM) for sentence refinment. The live translation system is built using the [Citizen ASL Dataset](https://www.microsoft.com/en-us/research/project/asl-citizen/) and runs in real time with a webcam.
 
-[![Live Sign Language Translation Demo](https://img.youtube.com/vi/gJ-PRa88E-M/maxresdefault.jpg)](https://www.youtube.com/watch?v=gJ-PRa88E-M)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=gJ-PRa88E-M">
+    <img src="demo/asldemo.gif" alt="Live ASL Translation Demo">
+  </a>
+</p>
 Watch a real-time demo of sign language translation using our trained model and the Citizen ASL dataset.
 > Disclaimer: I am an amateur signer, and the signing in this demo may not fully follow formal ASL grammar or conventions.
 
