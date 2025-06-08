@@ -14,7 +14,7 @@ Watch a real-time demo of sign language translation using our trained model and 
 ## Features
 - Pose-based sign language recognition using MediaPipe Holistic
 - Normalization and preprocessing of landmark sequences
-- GRU-based model trained on 200 unique glosses (271 total classes including duplicates)
+- GRU-based model trained on 200 unique glosses (271 total classes including duplicates) (with 80% accuracy on validation)
 - Real-time webcam-based translation with LLM for sentence refinement (OpenAI GPT)
 
 
