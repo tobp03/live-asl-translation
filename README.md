@@ -20,14 +20,10 @@ Watch a real-time demo of sign language translation using our trained model and 
 
 ## Setup
 ### Install Dependencies
+Make sure to have Python 3.10.17 installed. Once your done in the correct environment:
 ```bash
 pip install -r requirements.txt
 ```
-Alternatively, install dependencies manually ensuring the following versions:
-- Python 3.10.17
-- TensorFlow 2.19.0
-- MediaPipe 0.10.9
-- OpenAI 1.82.0
 
 ### Obtain API Key for LLM
 This project uses [OpenAI GPT API](https://platform.openai.com) for sentence refinement during live translation. You need a valid API key with billing enabled. Crete a file named `.env` in the project root and add the following line:
