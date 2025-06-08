@@ -30,7 +30,6 @@ This project uses [OpenAI GPT API](https://platform.openai.com) for sentence ref
 ```bash
 API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
-Make sure you have `python-dotenv` installed.
 
 ## 🚀 Usage
 - Full pipeline
