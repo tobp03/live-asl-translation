@@ -105,7 +105,7 @@ def start_live_feed(
         model_path,
         encoder_path,
         client,
-        threshold=1.2
+        threshold=1.2,
         webcam=0,
         complexity_setting=0
         ):
