@@ -7,6 +7,7 @@ This project implements a full pipeline to translate sign language into text usi
     <img src="demo/asldemo.gif" alt="Live ASL Translation Demo">
   </a>
 </p>
+
 Watch a real-time demo of sign language translation using our trained model and the Citizen ASL dataset.
 > Disclaimer: I am an amateur signer, and the signing in this demo may not fully follow formal ASL grammar or conventions.
 
