@@ -52,7 +52,7 @@ API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   1. Ensure the pre-trained GRU model (`.keras`) is available in the `/models` folder (already provided)
   2. Open `main_livefeed.ipynb`
   3. Jump directly to **Step 4** to start live translation using the pre-trained model
-
+- Preprocessed data and model training is also available on [Kaggle](https://www.kaggle.com/code/tobypu/aslcitizen-top200-training). 
 
 ## References
 - **ASL Citizen Dataset**  
