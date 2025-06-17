@@ -1,6 +1,6 @@
 # ✊ Real-time Sign Language Translation with Citizen ASL Dataset 
 
-This project implements a full pipeline to translate sign language into text using pose estimation, deep learning, and a large language model (LLM) for sentence refinment. The live translation system is built using the [Citizen ASL Dataset](https://www.microsoft.com/en-us/research/project/asl-citizen/) and runs in real time with a webcam.
+This project implements a full pipeline to translate sign language into text using pose estimation, deep learning, and a large language model (LLM) for sentence refinement. The live translation system is built using the [Citizen ASL Dataset](https://www.microsoft.com/en-us/research/project/asl-citizen/) and runs in real time with a webcam.
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=gJ-PRa88E-M">
@@ -9,12 +9,12 @@ This project implements a full pipeline to translate sign language into text usi
 </p>
 
 Watch a real-time demo of sign language translation using our trained model and the Citizen ASL dataset.
-> Disclaimer: Not a proffesional signer, the signing in this demo may not fully follow formal ASL grammar or conventions.
+> Disclaimer: Not a professional signer, the signing in this demo may not fully follow formal ASL grammar.
 
 ## Features
 - Pose-based sign language recognition using MediaPipe Holistic
 - Normalization and preprocessing of landmark sequences
-- GRU-based model trained on 200 unique glosses (271 total classes including duplicates) (with 80% accuracy on validation)
+- GRU-based model trained on 200 unique glosses (271 total classes including duplicates) (approx. 80% accuracy on validation)
 - Real-time webcam-based translation with LLM for sentence refinement (OpenAI GPT)
 
 
@@ -23,13 +23,13 @@ Watch a real-time demo of sign language translation using our trained model and 
 ### Requirements
 Make sure to have Python 3.10.17 installed. You can use pyenv or another version manager to install and activate it.
 
-### Clone the repostiroy
+### Clone the repository
 ```bash
 git clone https://github.com/tobp03/live-asl-translation.git
 cd live-asl-translation
 ```
-### Instal Dependencies
-Once your done in the correct environment:
+### Install Dependencies
+Once your done, in the correct environment:
 ```bash
 pip install -r requirements.txt
 ```
@@ -42,7 +42,7 @@ API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 ## 🚀 Usage
 - Full pipeline
-   To train your own model and reproduce the full workflow : Open and run `main_livefeed.ipynb`. This notebook contains all steps end-to-end:
+   To train your own model and reproduce the full workflow : Open and run `main_livefeed.ipynb`. This notebook contains all steps from start to finish:
    1.  Download the [Citizen ASL Dataset](https://www.microsoft.com/en-us/research/project/asl-citizen/)
    2.  Place the dataset folder in the same directory as `main_livefeed.ipynb` (the project root)
    3.  Open and run the full pipeline step 1-3 on `main_livefeed.ipynb`
@@ -59,13 +59,11 @@ API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   Desai, A., Berger, L., Minakov, F. O., Milan, V., Singh, C., Pumphrey, K., Ladner, R. E., Daumé III, H., Lu, A. X., Caselli, N., & Bragg, D.  
   *ASL Citizen: A Community-Sourced Dataset for Advancing Isolated Sign Language Recognition*.  
   arXiv preprint arXiv:2304.05934, 2023. [[Paper](https://arxiv.org/abs/2304.05934)]
-- **Keypoint Preprocessing**  
-  Roh, K., Lee, H., Hwang, E. J., Cho, S., & Park, J. C.  
-  *Preprocessing Mediapipe Keypoints with Keypoint Reconstruction and Anchors for Isolated Sign Language Recognition*.  
-  In *LREC-COLING 2024 11th Workshop on the Representation and Processing of Sign Languages*, pp. 323–334. [[Paper](https://aclanthology.org/2024.signlang-1.36.pdf)]
-
+  
+- **Keypoint Preprocessing** <br>
+  Roh, K., Lee, H., Hwang, E. J., Cho, S., & Park, J. C. (2024, May). Preprocessing Mediapipe Keypoints with Keypoint Reconstruction and Anchors for Isolated Sign Language Recognition. In *Proceedings of the LREC-COLING   2024 11th Workshop on the Representation and Processing of Sign Languages: Evaluation of Sign Language Resources* (pp. 323–334). [[Paper](https://aclanthology.org/2024.signlang-1.36.pdf)]
+  
 ## Related Publication
 This project is related to the research paper:  
-Purbojo, T., & Wijaya, A. (2025). *Pose-Based Sign Language Recognition Using Mediapipe Holistic and LSTM*.  
-[ASSET Journal, Volume X, Issue Y, Pages A-B](https://journal2.upgris.ac.id/index.php/asset/article/view/1658)
+Purbojo, T., & Wijaya, A. (2025). Enhancing Pose-Based Sign Language Recognition: A Comparative Study of Preprocessing Strategies with GRU and LSTM. *Advance Sustainable Science Engineering and Technology*, 7(2), 02502017-02502017. [[Paper](https://journal2.upgris.ac.id/index.php/asset/article/view/1658)]
 
